@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <title>Cadastro de produtos </title>
+</head>
+
+<body>
+  
+
+  <section class="section-container background-section-one ">
+    <img src="http://telefonarnet.com.br/site/views/data/dicas/dicas-importantes-de-seguranca-para-compras-pela-internet-imagem-1529007095.jpg" alt="Logotipo">
+    <div>
+      <button id="cartbutton" onclick="goToCart()"><img src="https://media.istockphoto.com/vectors/shopping-cart-icon-isolated-on-white-background-vector-id1206806317?k=6&m=1206806317&s=612x612&w=0&h=Fo7D7nh_QPu758KRdbNTp7m4xSVOxBvJ2cfUvA1_k_U=" alt="Cart-image"></button>
+
+      <a href="#abrirModal"> <button id="button"> Clique aqui para se cadastrar no nosso site! </button> </a>
+    </div>
+  </section>
+
+
+  <div class="card-carrousel">
+
+    <div class="card">
+      <img src="./assets/Monitor.jfif" alt="Imagem de um monitor" style="width:50%">
+      <div class="card-box">
+         <h4 class="product-name">Monitor 19,5 pol.</h4>
+        <p  class="description" >Um incrível monitor de 19.5 polegadas que vai te atender demais! </p>
+        <p class="cutted"> De R$ 4999,00 </p>
+        <p> Por R$  </p> <p class="product-price" >2000,00</p>
+        <button class="buttonadd" onclick="addToCart(0)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="./assets/telefonecelular.jpg" alt="Imagem de um monitor" style="width:20%">
+      <div class="card-box">
+         <h4 class="product-name">MegaTelefone8.</h4>
+        <p  class="description" >Um incrível celular de altíssima tecnologia para te deixar ligadão com a galera  </p>
+        <p class="cutted">De R$ 4999,00 </p>
+        <p>Por R$</p><p class="product-price" >2000,00</p>
+        <button class="buttonadd" onclick="addToCart(1)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="./assets/Tv.png" alt="Imagem de uma TV" style="width:50%">
+      <div class="card-box">
+         <h4 class="product-name">TV 50 Pol.</h4>
+        <p  class="description" > Uma incrível tela de 50 Polegadas , para você fazer da sua casa um cinema !  </p>
+        <p class="cutted">De R$ 4999,00 </p>
+        <p>Por R$</p><p class="product-price"  > 2000,00</p>
+        <button class="buttonadd" onclick="addToCart(2)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1861919549" alt="Imagem de um monitor" style="width:50%">
+      <div class="card-box">
+         <h4 class="product-name">Monitor 20 pol.</h4>
+        <p  class="description" > Um monitor muito moderno e bacanoso!  </p>
+        <p class="cutted">De R$ 4999,00 </p>
+        <p>Por R$</p> <p  class="product-price"> 2000,00</p>
+        <button class="buttonadd" onclick="addToCart(3)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61P2EO2PbTL._AC_SL1000_.jpg" alt="Imagem de um celular" style="width:25%">
+      <div class="card-box">
+         <h4 class="product-name"> Telemodern5</h4>
+        <p  class="description" > Um Smartphone de última geração  </p>
+        <p class="cutted"> De R$ 4999,00 </p>
+        <p> Por R$  </p>  <p  class="product-price"  > 2000,00</p>
+        <button class="buttonadd" onclick="addToCart(4)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.pontofrio-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1864903481" alt="Imagem de um Vídeo-game" style="width:50%">
+      <div class="card-box">
+         <h4 class="product-name">videogame topperson</h4>
+        <p  class="description" >Um incrível videogame moderno e cheio de features! </p>
+        <p class="cutted"> De R$ 4999,00 </p>
+        <p> Por R$  </p> <p class="product-price"> 2000,00</p>
+        <button class="buttonadd" onclick="addToCart(5)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/Monitor.jfif" alt="Imagem de um monitor" style="width:50%">
+      <div class="card-box">
+         <h4 class="product-name">Monitor 19,5 pol.</h4>
+        <p  class="description" >Um incrível monitor de 19.5 polegadas que vai te atender demais! </p>
+        <p class="cutted"> De R$ 4999,00 </p>
+        <p> Por R$  </p>  <p class="product-price"> 2000,00</p>
+        <button class="buttonadd" onclick="addToCart(6)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/Monitor.jfif" alt="Imagem de um monitor" style="width:50%">
+      <div class="card-box">
+         <h4 class="product-name">Monitor 19,5 pol.</h4>
+        <p  class="description" >Um incrível monitor de 19.5 polegadas que vai te atender demais! </p>
+        <p class="cutted"> De R$ 4999,00 </p>
+        <p> Por R$  </p> <p class="product-price"> 2000,00</p>
+        <button class="buttonadd" onclick="addToCart(7)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/Monitor.jfif" alt="Imagem de um monitor" style="width:50%">
+      <div class="card-box">
+         <h4 class="product-name">Monitor 19,5 pol.</h4>
+        <p class="description">Um incrível monitor de 19.5 polegadas que vai te atender demais! </p>
+        <p class="cutted"> De R$ 4999,00 </p>
+        <p> Por R$  </p>  <p class="product-price"> 2000,00</p>
+        <button class="buttonadd" onclick="addToCart(8)"> Adicionar ao Carrinho </button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div id="abrirModal" class="modal">
+
+    <h2>Janela Modal</h2>
+    <div class="container">
+      <a href="#fechar" title="Fechar" class="fechar">x</a>
+      <section class="box">
+        <div class="card-container">
+          <div id="content">
+            <p id="modal-contenct"> Cadastre-se para poder efetuar as suas compras  </p>
+            <form id="form">
+              <input type="text" placeholder="name" id="nome">
+              <input type="text" placeholder="email" id="email">
+              <input type="text" placeholder="Data de Nascimento" id="born">
+              <input type="text" placeholder="RG" id="rg">
+              <button type="submit" value="Cadastrar" id="form"> Cadastrar </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+
+    </div>
+  </div>
+
+ 
+  <footer>
+
+    <p>Essa página foid esenvolvida para guardar dados do usuário e dos produtos , enviando tudo para um carrinho que também pode ser visualizado. 
+      Desafio 02 do Hiring Coders - Gama Academy </p>
+    <nav class="redes-sociais">
+
+      <a href=" https://www.linkedin.com/in/gabriel-da-cruz-santos/">
+        <img src="./assets/LinkedIn.jpg" alt="LinkedIn">
+
+      </a>
+
+
+      <a href="https://github.com/Gabrielcs96">
+        <img src="./assets/GitHub.jpg" alt="Github">
+
+      </a>
+
+
+    </nav>
+
+  </footer>
+  <script src="js/script.js"></script>
+  
+</body>
+
+
+</html>

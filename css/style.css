@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-container img{
+  height: 50vh;
+  width: 50vw;
+}
+
+#cartbutton{
+  position: fixed;
+  right: 1rem;
+  top:1rem;
+  transition-duration: 1s;
+  transition-property: transform;
+  cursor: pointer;
+}
+
+#cartbutton:hover{
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+#cartbutton img{
+  width: 10vh;
+  height: auto;
+}
+.cutted {
+  text-decoration: line-through;
+}
+.background-section-one{
+ background-color:cornsilk;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.card-carrousel{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+ flex-wrap:wrap ;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-box {
+  padding: 2px 16px;
+  padding-top: 0.5rem;
+}
+
+.buttonadd{
+  width: 300px;
+  height: 50px;
+}
+
+#button{
+
+  border-radius: 16%;
+  color: white;
+  height: 3rem;
+  width: 16rem;
+  background-color: rgb(116, 113, 113);
+
+}
+
+#button:hover{
+  background-color: green;
+  color: #000;
+  transform: scale(1.2,1.2);
+
+}
+
+
+
+
+input{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 12px;
+  background: #000;
+  color: #fff;
+  outline:none; /* Adicionando um outline para tirar o contorno*/
+}
+
+form{
+  display: grid;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+ canvas{ 
+    display: block;
+  }
+  #particles-container{ 
+   
+    width: 100%; 
+    height: 100%; 
+    background-color: #090909; 
+    background-image: url("https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 100% 100%; 
+    min-height:100%;
+    position:absolute;
+    
+  }
+
+  footer{
+    
+    height: 3rem;
+    padding: 25px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+  }
+
+  footer .social {
+    width: fit-content;
+  }
+
+  
+footer a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer a img{
+  max-width: 2rem;
+}
+
+
+.redes-sociais{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  margin-bottom: 0.3rem;
+  
+}
+.redes-sociais a img:hover{
+  transform: translateY(-10rem);
+  transform: scale(2,2);
+  
+  
+}
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+  }
+
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: 0.375rem;
+    top: 0;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+  }
+
+  .container {
+    
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px; 
+    align-items: center;
+    background-attachment: fixed;
+   
+    background-repeat: no-repeat;
+
+
+    }
+    .box {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    align-items: center;
+    }
+    body {
+    margin: 0px;
+    }
+
+    #modal-contenct{
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    form{
+      margin-top: 1.375rem;
+    }
+
+    /*Swipers*/
+    .swiper-slide {
+      height: auto;
+      padding: 4rem 1rem;
+    }
+    
+    .swiper-pagination-bullet {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+    
+    .swiper-pagination-bullet-active {
+      background: var(--base-color);
+    }
