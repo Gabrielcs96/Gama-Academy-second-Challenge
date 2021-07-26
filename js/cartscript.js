@@ -20,6 +20,6 @@ function finishCart(){
 localStorage.removeItem('@ecommerce/products');
 setTimeout(() =>{ 
     alert('Parabéns, sua compra foi concluída'),
-    window.location.href = 'http://127.0.0.1:5500/index.html'
+    window.location.href = 'index.html'
 }, 1000)
 }

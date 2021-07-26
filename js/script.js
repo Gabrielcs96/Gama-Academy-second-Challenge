@@ -54,7 +54,7 @@ localStorage.setItem("@ecommerce/products", convertArray);
 
 
 function goToCart() {
-  window.location.href = "http://127.0.0.1:5500/cart.html";
+  window.location.href = "/cart.html";
 
 }
 
